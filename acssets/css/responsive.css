@@ -1,0 +1,112 @@
+@media  (max-width:1023px) {
+    .nav-list{
+        display:block;
+    }
+    .app
+    {
+        overflow: hidden;
+    }
+    
+    .navbar-list{
+        background-color: var(--white-color);
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 50%; 
+        display: none;
+        animation: fadeIn 0.3s linear ;
+    }
+    .nav-link{
+        margin-left: 24px;
+        color: aquamarine;
+    }
+    .nav-link::after{
+        background-color: aqua;
+    }
+    .nav-link::before{
+        background-color: aqua;
+    }
+    .nav-menu{
+        display: block;
+        margin-right: 24px;
+        font-size: 3rem;
+    }
+    .overlay{
+        display: none;
+    }
+    .check-list:checked ~ .navbar .overlay{
+        display: block;
+    }
+    .check-list:checked ~ .navbar .navbar-list{
+        display: block;
+
+    }
+    .home,
+    .about,
+    .service,
+    .portfolio,
+    .footer
+    {
+        margin: 0 20px;
+    }
+   
+    .nav-icon{
+        display: inline-block;
+        margin: 24px;
+    }
+    .nav-logo{
+        margin-left: 24px;
+    }
+    .home-content{
+        transform: translateY(-20px);
+    }
+    .about-img{ 
+        width: 700px;
+        height: 700px;
+    }
+    .img-link{
+        width: 80%;
+        border-radius: 12px;
+    }
+    .service-item{
+        margin-top: 24px;
+    }
+    
+}
+@media   (min-width:740px) and (max-width:1023px) {
+    .home-img-introduct{
+        width: 50%;
+        height: 50%;
+        justify-content: center;
+    }
+    
+}   
+@media (max-width:739px){
+    .navbar-list{
+        width: 75%;
+    }
+    .content-name{
+        font-size: 4rem;
+        display: block;
+    }
+    .about-img{ 
+        width: 320px;
+        height: 320px;
+        transform: translateX(3%);
+    }
+    .img-link{
+        width: 80%;
+        border-radius: 12px;
+    }
+    .content-body{
+        max-width: 100%;
+        
+    }
+    
+}
+@media (min-width:1024px) {
+    .about-img{
+        transform: translateX(70%);
+    }
+}
